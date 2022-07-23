@@ -1,0 +1,56 @@
+.arcticle {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 0px 10px 30px;
+	&__title {
+		font-size: 34px;
+		font-weight: 700;
+		line-height: math.div(50, 34) * 100%;
+		margin: 0px 0px 30px 0px;
+		@media (max-width: ($md3 + px)) {
+			font-size: 30px;
+		}
+	}
+
+	&__info {
+		margin: 0px 0px 20px 0px;
+		display: flex;
+	}
+
+	&__year {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #fff;
+		background: #ff7c7c;
+		border-radius: 16px;
+		height: 25px;
+		padding: 0px 10px;
+		font-size: 18px;
+		font-weight: 900;
+	}
+
+	&__category {
+		line-height: math.div(25, 20) * 100%;
+		align-self: center;
+		font-size: 20px;
+		margin: 0px 0px 0px 25px;
+		@media (max-width: ($md3 + px)) {
+			font-size: 18px;
+		}
+	}
+
+	&__text {
+		p {
+			@extend .text;
+			margin: 0px 0px 20px 0px;
+		}
+		img {
+			max-width: 100%;
+			margin: 0px 0px 20px 0px;
+		}
+	}
+
+	&__image {
+	}
+}

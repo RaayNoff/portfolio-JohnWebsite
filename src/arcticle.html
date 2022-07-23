@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title": "Arcticle"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/header.html', {link: "1"})
+		<main class="page">
+			<div class="arcticle">
+				<h1 class="arcticle__title">Designing Dashboards with usability in mind</h1>
+				<div class="arcticle__info">
+					<div class="arcticle__year">2020</div>
+					<div class="arcticle__category">Dashboard, User Experience Design</div>
+				</div>
+				<div class="arcticle__text">
+					<p>
+						Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+						officia consequat duis enim velit
+						mollit. Exercitation veniam consequat sunt nostrud amet.
+					</p>
+					<img src="@img/arcticle/1.jpg" alt="" class="arcticle__image">
+					<p>
+						Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+						officia consequat duis enim velit
+						mollit. Exercitation veniam consequat sunt nostrud amet.
+					</p>
+					<img src="@img/arcticle/2.jpg" alt="" class="arcticle__image">
+					<img src="@img/arcticle/3.jpg" alt="" class="arcticle__image">
+				</div>
+
+			</div>
+		</main>
+		@@include('html/footer.html', {})
+	</div>
+	@@include('html/js.html', {})
+</body>
+
+</html>
